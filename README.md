@@ -23,3 +23,4 @@
 |Title | Description | Paper | Code | Year |
 |------|-------|------|------|------|
 |formulation of the image reconstruction problem in MPI |X-Space == frequency space reconstruction |<https://www.degruyter.com/document/doi/10.1515/bmt-2012-0063/pdf> |NULL |2013 |
+|Weighted iterative reconstruction in MPI |Weight Matrix Selection(Normalize rows) |<https://iopscience.iop.org/article/10.1088/0031-9155/55/6/003/meta> |NULL |2010 |
