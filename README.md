@@ -1,26 +1,18 @@
-# DeepLearning-MagneticParticleImaging-Reconstruction
-## MPI straight reconstruction
+# MPI论文总结
+* **README.md中会按类型总结所有的工作，具体的一些细节说明会放在对应的一些markdown文件下**
 
-## SM recovery
+## MPI经典文章
 
-### SM super-resolution
+## MPI设备创新
 
-|Model-Name | Description | Paper | Code | Year |
+## MPI成像范式创新
+
+## MPI图像重建工作
+### MPI straight reconstruction
+
+### SM recovery
+
+| Name | Short Summary | Author | Year | Where |
 |------|-------|------|------|------|
-|TranSMS |SM super-resolution method based on transformer network |<https://arxiv.org/pdf/2111.02163> |<https://github.com/icon-lab/TranSMS> |2022 |
-
 
 ## Image postprocessing
-
-## Reconstruction principle
-
-### X-Space method
-|Title | Description | Paper | Code | Year |
-|------|-------|------|------|------|
-|Multidimensional X-Space |the first Multidimensional X-Space method |<https://pmc.ncbi.nlm.nih.gov/articles/PMC3990467/pdf/nihms377771.pdf> |NULL |2011 |
-
-### Overview
-|Title | Description | Paper | Code | Year |
-|------|-------|------|------|------|
-|formulation of the image reconstruction problem in MPI |X-Space == frequency space reconstruction |<https://www.degruyter.com/document/doi/10.1515/bmt-2012-0063/pdf> |NULL |2013 |
-|Weighted iterative reconstruction in MPI |Weight Matrix Selection(Normalize rows) |<https://iopscience.iop.org/article/10.1088/0031-9155/55/6/003/meta> |NULL |2010 |
