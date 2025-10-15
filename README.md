@@ -14,4 +14,4 @@
 
 ### SM recovery
 
-## Image postprocessing
+### Image postprocessing
