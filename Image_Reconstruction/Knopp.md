@@ -1,4 +1,11 @@
 | Paper Name | Year | Publication Venue | Author(1st & Corr.) | Short Summary | Item Number | 
 |------|------|------|------|------|------|
-| Online reconstruction of 3D magnetic particle imaging data | 2016 | Physics in Medicine & Biology | T Knopp and M Hofmann | 2016.1 | 
+| Online reconstruction of 3D magnetic particle imaging data | 2016 | Physics in Medicine & Biology | T Knopp and M Hofmann | 伪实时的在线MPI重建框架(延迟约为2s，边测量数据边成像) |2016.1 | 
+
+* **#2016.1**  
+  2015年MPI的第一台商业设备问世，标志着MPI技术进入临床前研究状态，但在真实的临床场景中，offline的重建会使得在临床阶段没有及时的信息反馈，因此需要构建一个online的重建框架，以文章中的成像场景为例，采集数据帧数可达46帧/秒，意味着需要较快的重建速度与之配合，以往的很多研究没有考虑在线重建主要是因为MPI技术还在萌芽阶段，很多研究主要围绕灵敏度和空间分辨率，这可以称之为实验室场景下的成像性能研究，因此本文的出发点主要围绕在线重建，这是他主要区别于其他文章的地方。  
+  文章使用**基于系统矩阵**的方式进行重建，在系统矩阵可以存储在内存中的情况下基于系统矩阵的方法有一定的计算速度优越性。同时虽然笛卡尔轨迹在基于FFP和基于FFL的成像中都有很好的表现，但无法胜任实时成像的任务，在多维的情况下，只能使用**丽萨荣轨迹**进行实验。
+  
+  
+  
 
