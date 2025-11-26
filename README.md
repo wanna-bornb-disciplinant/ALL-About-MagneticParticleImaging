@@ -8,8 +8,8 @@
 
 ## MPI图像重建工作
 
-### MPI straight reconstruction
+- MPI straight reconstruction
 
-### SM recovery
+- SM recovery
 
-### Image postprocessing
+- Image postprocessing
