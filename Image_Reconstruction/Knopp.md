@@ -2,6 +2,7 @@
 |------|------|------|------|------|------|
 | Online reconstruction of 3D magnetic particle imaging data | 2016 | Physics in Medicine & Biology | T Knopp and M Hofmann | 伪实时的在线MPI重建框架(延迟约为2s，边测量数据边成像) |2016.1 | 
 | Weighted iterative reconstruction for magnetic particle imaging | 2010 | Physics in Medicine & Biology | T Knopp, T M Buzug | 线性重建问题中引入权重矩阵+频率筛选+迭代算法提升重建质量 | 2010.1 | 
+| Edge Preserving and Noise Reducing  Reconstruction for Magnetic  Particle Imaging | 2017 | TMI | Martin Storath, Andreas Weinmann |  | 2017.1 | 
 
 * **#2016.1**
   这篇文章的噱头很足，因为在临床场景下实时成像是必需的手段，因此如果从重建的角度来讲，这篇文章没有什么新东西，但这个方向很重要。
