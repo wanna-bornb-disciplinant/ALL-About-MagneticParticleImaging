@@ -1,7 +1,7 @@
 | Paper Name | Year | Publication Venue | Author(1st & Corr.) | Short Summary | Item Number | 
 |------|------|------|------|------|------|
 | Comparison of System-Matrix-Based and Projection-Based Reconstructions for Field Free Line Magnetic Particle Imaging | 2017 | International Journal on Magnetic Particle Imaging | Serhat Ilbey，Tolga Çukur | 比较了基于FFL的投影成像和系统矩阵成像的性能，主要学习这篇文章对这两类方法的具体实现 | 2017.1 | 
-| TranSMS: Transformers for Super-Resolution  Calibration in Magnetic Particle Imaging | 2022 | Alper Gungor，Tolga Cukur |  混合架构实现低分辨率系统矩阵的超分 | 2022.1 |
+| TranSMS: Transformers for Super-Resolution  Calibration in Magnetic Particle Imaging | 2022 | TMI |Alper Gungor，Tolga Cukur |  混合架构实现低分辨率系统矩阵的超分 | 2022.1 |
 
 * **#2017.1**  
   **看文本的初衷是ADMM算法在系统矩阵中的用法，本文的主旨是对比了基于FFL的系统矩阵重建方法和投影重建的重建质量和重建时间，其中投影重建用到了投影X-Space+逆拉东变换；基于系统矩阵的重建对比了ADMM和nonnegative fused lasso(NFL)的效果**，其中NFL的方法在"M. Storath, C. Brandt, M. Hofmann, T. Knopp, J. Salamon, A. Weber, and A. Weinmann. Edge Preserving and Noise Reducing Reconstruction for Magnetic Particle Imaging. IEEE Trans. Med. Imag., 36(1):74–85, 2017."这篇文章中有详细说明。
