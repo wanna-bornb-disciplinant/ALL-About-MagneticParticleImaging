@@ -1,7 +1,7 @@
 | Paper Name | Year | Publication Venue | Author(1st & Corr.) | Short Summary | Item Number | 
 |------|------|------|------|------|------|
 | Online reconstruction of 3D magnetic particle imaging data | 2016 | Physics in Medicine & Biology | T Knopp and M Hofmann | 伪实时的在线MPI重建框架(延迟约为2s，边测量数据边成像) |2016.1 | 
-| Weighted iterative reconstruction for magnetic particle imaging | 2010 | Physics in Medicine & Biology | T Knopp, T M Buzug | 线性重建问题中引入权重矩阵+频率筛选+迭代算法提升重建质量 | 2010.1 | 
+| Weighted iterative reconstruction for magnetic particle imaging | 2010 | Physics in Medicine & Biology | T Knopp, T M Buzug | 线性重建问题中引入权重矩阵+频率筛选+迭代算法提升重建质量，解读了Kac和CGNR | 2010.1 | 
 | Edge Preserving and Noise Reducing  Reconstruction for Magnetic  Particle Imaging | 2017 | TMI | Martin Storath, Andreas Weinmann | NFL方案替代了tikhonov，并且设计了一个针对于MPI的离散化TV处理方式，在狭窄血管场景下达到SOTA | 2017.1 | 
 
 * **#2016.1**
