@@ -3,6 +3,7 @@
 | Online reconstruction of 3D magnetic particle imaging data | 2016 | Physics in Medicine & Biology | T Knopp and M Hofmann | 伪实时的在线MPI重建框架(延迟约为2s，边测量数据边成像) |2016.1 | 
 | Weighted iterative reconstruction for magnetic particle imaging | 2010 | Physics in Medicine & Biology | T Knopp, T M Buzug | 线性重建问题中引入权重矩阵+频率筛选+迭代算法提升重建质量，解读了Kac和CGNR | 2010.1 | 
 | Edge Preserving and Noise Reducing  Reconstruction for Magnetic  Particle Imaging | 2017 | TMI | Martin Storath, Andreas Weinmann | NFL方案替代了tikhonov，并且设计了一个针对于MPI的离散化TV处理方式，在狭窄血管场景下达到SOTA | 2017.1 | 
+| 3d-SMRnet: Achieving a new quality of MPI system matrix recovery by deep learning | 2020 | MICCAI | Ivo M. Baltruschat，Tobias Knopp | 最早使用超分CNN实现低分辨率系统矩阵的超分，战胜当时基于压缩感知的SOTA | 2020.1 | 
 
 * **#2016.1**
   这篇文章的噱头很足，因为在临床场景下实时成像是必需的手段，因此如果从重建的角度来讲，这篇文章没有什么新东西，但这个方向很重要。
@@ -127,6 +128,9 @@
   一个很重要的点：**此重建算法是可以高度并行的，算梯度的矩阵乘法可以分解，映射可以分方向并行，对于多帧延时重建，使用热启动策略，即使用上一帧的重建数据作为初始解，这依赖于MPI在多帧之间的数据变化不大**。
 
   实验不说了，比较充分，有一维、二维的仿真对比实验，只打tikhonov+kaczmarz，有三维的心血管介入实验，重建了三维的渲染结果和二维切片结果，效果很好，重点的训练策略可以和ADMM进行对比学习。
+
+* **# 2020.1**
+  
   
 
   
