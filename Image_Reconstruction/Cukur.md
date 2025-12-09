@@ -1,6 +1,7 @@
 | Paper Name | Year | Publication Venue | Author(1st & Corr.) | Short Summary | Item Number | 
 |------|------|------|------|------|------|
 | Comparison of System-Matrix-Based and Projection-Based Reconstructions for Field Free Line Magnetic Particle Imaging | 2017 | International Journal on Magnetic Particle Imaging | Serhat Ilbey，Tolga Çukur | 比较了基于FFL的投影成像和系统矩阵成像的性能，主要学习这篇文章对这两类方法的具体实现 | 2017.1 | 
+| Deep Learned Super Resolution of System Matrices for Magnetic  Particle Imaging | 2021 | EMBC | Alper Gungor，Tolga Cukur | 用内部仿真数据训练了一个RDN用于同时实现系统矩阵行去噪和系统矩阵超分 | 2021.1 | 
 | TranSMS: Transformers for Super-Resolution  Calibration in Magnetic Particle Imaging | 2022 | TMI |Alper Gungor，Tolga Cukur |  混合架构实现低分辨率系统矩阵的超分 | 2022.1 |
 
 * **#2017.1**  
@@ -38,6 +39,10 @@
 
   总结：**其实如果看完之前的一系列文章，这篇文章基本没做什么，就是把拉东逆变换、NFL、ADMM的几种方法都实现了一下，做了一个对比，但文章的意义主要在于可以看清楚ADMM算法实现的路径是如何的**。
 
+* **# 2021.1**  
+  这篇文章只能算一个小的尝试，搭建的网络很小，训练使用的是土耳其组自己内部的仿真数据，数据的规模也很小，使用基于FFL的模式，角度变换只有30种，单个角度下只采集9个频率分量，另外在对比的地方其实只使用了插值出来的系统矩阵在同维度进行对比，其他也都是带噪声的高分辨率系统矩阵、低分辨率系统矩阵等等对比实验。
+
+  能说的有什么呢：**这篇文章认为如果训练的好，实际上系统矩阵去噪和系统矩阵超分是一体的，原因在于不管是低维度还是高维度的校准测量，最终网络的目的是输出不带噪声的高分辨率系统矩阵，因此如果从这个角度来上来说，网络承担着两个意义，一个是减少校准测量时间，一个是提高SNR，去噪，如果按照线性的时间增长评价高分辨率和低分辨率的系统矩阵测量，低分辨率的系统矩阵本身就会比高分辨率的系统矩阵的SNR要高，愿意在于单个节点的面积更大，可以使用更大的delta sample，如果高分辨率的情况不多次采集取平均，本身的SNR就会降低**，文章当中对sensitivity map的称呼指的是单行系统矩阵，其实单行也就是在某个频率下的单位浓度响应，符合这里的定义；最终重建采用土耳其组很喜欢使用的ADMM方法；这篇文章对于复数的处理是直接将实部和虚部分离，最后在输出的时候又将两部分合并；使用的网络是RDN，L1的损失函数；仿真数据是基于FFL，仿真中的噪声施加了30dB的，这是他们在真实系统中得到的数据；通过nRMSE衡量系统矩阵重建精度，通过SSIM和PSNR衡量重建图像精度，其他没啥了。
   
   
   
